@@ -9,14 +9,17 @@
     <!-- AdSense'i ekleyeceğin zaman yorumdan çıkar ve client ID'ni yaz -->
     <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=YOUR_CLIENT_ID" crossorigin="anonymous"></script> -->
   </head>
-  <body class="min-h-screen bg-white text-slate-900">
-    <header class="border-b bg-white">
+  <body class="min-h-screen flex flex-col bg-slate-900 text-white">
+    <header class="border-b bg-slate-800/90 backdrop-blur sticky top-0 z-10">
       <div class="mx-auto max-w-6xl px-4 sm:px-6 py-4 flex items-center justify-between">
-        <a href="/" class="font-semibold">İyilik Görevleri</a>
+        <a href="/" class="flex items-center gap-2 font-semibold text-emerald-400">
+          <img src="/favicon.svg" alt="logo" class="h-6 w-6" />
+          <span>İyilik Görevleri</span>
+        </a>
         <nav class="hidden sm:flex gap-6 text-sm">
-          <a href="/gorevler.html" class="hover:text-emerald-600">Görevler</a>
-          <a href="/blog.html" class="text-emerald-700">Blog</a>
-          <a href="/bagis-defteri.html" class="hover:text-emerald-600">Bağış Defteri</a>
+          <a href="/gorevler.html" class="hover:text-emerald-400">Görevler</a>
+          <a href="/blog.html" class="hover:text-emerald-400">Blog</a>
+          <a href="/bagis-defteri.html" class="hover:text-emerald-400">Bağış Defteri</a>
         </nav>
       </div>
     </header>
@@ -40,10 +43,14 @@
       -->
     </main>
 
-    <footer class="border-t bg-white">
-      <div class="mx-auto max-w-6xl px-4 sm:px-6 py-8 text-sm text-slate-600 flex items-center justify-between">
+    <footer class="border-t bg-slate-900 text-white">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6 py-8 text-sm flex flex-col sm:flex-row gap-3 sm:items-center sm:justify-between">
         <p>© <span id="y"></span> İyilik Görevleri</p>
-        <a href="/aydinlatma.html" class="hover:text-emerald-700">Aydinlatma</a>
+        <div class="flex gap-4">
+          <a href="/blog.html" class="hover:text-emerald-400">Blog</a>
+          <a href="/bagis-defteri.html" class="hover:text-emerald-400">Bağış Defteri</a>
+          <a href="/aydinlatma.html" class="hover:text-emerald-400">Aydınlatma</a>
+        </div>
       </div>
     </footer>
     <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
