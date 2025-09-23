@@ -11,73 +11,49 @@
     <meta property="og:description" content="Görev yap, biz kazancımızdan bağış yapalım." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://alanadiniz.com/" />
-
-    <!-- Kendi CSS dosyamız -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <!-- Banner Alanı -->
-    <div class="w-full">
-      <img src="images/banner.jpg" alt="Banner" class="w-full h-64 object-cover" />
+    <div class="banner">
+      <img src="images/banner.jpg" alt="Banner" />
     </div>
-    <header>
-      <div>
-        <a href="/">
-          <img src="/favicon.svg" alt="logo" />
-          <span>İyilik Görevleri</span>
-        </a>
-        <nav>
-          <a href="/gorevler.html">Görevler</a>
-          <a href="/blog.html">Blog</a>
-          <a href="/bagis-defteri.html">Bağış Defteri</a>
-        </nav>
+    <header class="header">
+      <div class="logo">
+        <img src="/favicon.svg" alt="logo" style="height:32px;" />
+        İyilik Görevleri
       </div>
+      <nav>
+        <a href="/gorevler.html">Görevler</a>
+        <a href="/blog.html">Blog</a>
+        <a href="/bagis-defteri.html">Bağış Defteri</a>
+      </nav>
     </header>
     <main>
       <section>
+        <h1>Görev yap, iyilik olsun.</h1>
+        <p>İzlenen videolar ve tamamlanan anketlerden elde ettiğimiz gelirden sokak hayvanlarına ve doğaya düzenli bağış yapıyoruz. Platform bağış toplamaz.</p>
         <div>
-          <h1>Görev yap, iyilik olsun.</h1>
-          <p>
-            İzlenen videolar ve tamamlanan anketlerden elde ettiğimiz gelirden
-            sokak hayvanlarına ve doğaya düzenli bağış yapıyoruz. Platform bağış toplamaz.
-          </p>
-          <div>
-            <a href="/gorevler.html">Görevlere Başla</a>
-            <a href="/bagis-defteri.html">Bağış Defteri</a>
-          </div>
-          <p>
-            Not: AdSense sadece blog gibi normal içerik sayfalarında kullanılacaktır; görev sayfaları teşvikli ağlar içindir.
-          </p>
+          <a href="/gorevler.html">Görevlere Başla</a>
+          <a href="/bagis-defteri.html">Bağış Defteri</a>
         </div>
-        <div>
-          “Bir video izle • Bir kedi besle” (placeholder)
-        </div>
+        <p>Not: AdSense sadece blog gibi normal içerik sayfalarında kullanılacaktır; görev sayfaları teşvikli ağlar içindir.</p>
+        <p>“Bir video izle • Bir kedi besle” (placeholder)</p>
       </section>
       <section>
-        <div>
-          <div>
-            <h3>Basit Görevler</h3>
-            <p>Kısa video, mini anket, paylaşım.</p>
-          </div>
-          <div>
-            <h3>Şeffaf Raporlama</h3>
-            <p>Aylık bağış makbuzları herkese açık.</p>
-          </div>
-          <div>
-            <h3>Oyunlaştırma</h3>
-            <p>Puan, rozet, arkadaş daveti.</p>
-          </div>
-        </div>
+        <h2>Basit Görevler</h2>
+        <p>Kısa video, mini anket, paylaşım.</p>
+        <h2>Şeffaf Raporlama</h2>
+        <p>Aylık bağış makbuzları herkese açık.</p>
+        <h2>Oyunlaştırma</h2>
+        <p>Puan, rozet, arkadaş daveti.</p>
       </section>
     </main>
     <footer>
-      <div>
-        <p>© <span id="y"></span> İyilik Görevleri</p>
-        <div>
-          <a href="/blog.html">Blog</a>
-          <a href="/bagis-defteri.html">Bağış Defteri</a>
-          <a href="/aydinlatma.html">Aydınlatma</a>
-        </div>
+      <div>© <span id="y"></span> İyilik Görevleri</div>
+      <div class="footer-links">
+        <a href="/blog.html">Blog</a>
+        <a href="/bagis-defteri.html">Bağış Defteri</a>
+        <a href="/aydinlatma.html">Aydınlatma</a>
       </div>
     </footer>
     <script>
