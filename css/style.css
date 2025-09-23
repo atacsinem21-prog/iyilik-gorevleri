@@ -1,0 +1,14 @@
+/* Arka planı antrasit yapalım */
+body {
+  background-color: #2f2f2f; /* antrasit gri */
+  color: #f5f5f5; /* yazılar daha okunaklı olsun diye açık renk */
+}
+
+/* Linklere küçük geçiş efekti */
+a {
+  transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+  color: #10b981; /* emerald-500 */
+}
