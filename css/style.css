@@ -1,7 +1,7 @@
 /* GENEL ARKA PLAN ve YAZI */
 body {
   background-color: #2f2f2f; /* Antrasit */
-  color: #f5f5f5;           /* Açık yazı rengi */
+  color: #f5f5f5;
   font-family: 'Inter', sans-serif;
   margin: 0;
   padding: 0;
@@ -20,22 +20,31 @@ a:hover {
 
 /* HEADER / MENÜ */
 header {
-  background-color: #1f1f1f; /* Menü için koyu ton */
-  color: #ffffff;
-  border-bottom: 1px solid #333;
+  background-color: #3a3a3a; /* koyu gri ton */
+  color: #f5f5f5;
+  border-bottom: 1px solid #555;
+}
+
+/* NAV LINKLERİ */
+header nav a {
+  color: #f5f5f5;
+}
+
+header nav a:hover {
+  color: #10b981;
 }
 
 /* FOOTER */
 footer {
-  background-color: #1a1a1a; /* Footer koyu ton */
+  background-color: #3a3a3a; /* koyu gri ton */
   color: #cccccc;
-  border-top: 1px solid #333;
+  border-top: 1px solid #555;
 }
 
 /* BANNER */
 .banner {
   width: 100%;
-  height: 16rem; /* 64px * 4 = 256px gibi */
+  height: 16rem; 
   object-fit: cover;
 }
 
@@ -70,7 +79,7 @@ footer {
 
 /* KARTLAR */
 .card {
-  background-color: #3a3a3a;
+  background-color: #4a4a4a; /* biraz daha açık kart rengi */
   border-radius: 1rem;
   padding: 1.5rem;
   box-shadow: 0 2px 8px rgba(0,0,0,0.3);
