@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Blog | İyilik Görevleri</title>
+    <meta name="description" content="Hayvan refahı ve doğa için ipuçları, haberler ve rehberler." />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- AdSense'i ekleyeceğin zaman yorumdan çıkar ve client ID'ni yaz -->
+    <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=YOUR_CLIENT_ID" crossorigin="anonymous"></script> -->
+  </head>
+  <body class="min-h-screen bg-white text-slate-900">
+    <header class="border-b bg-white">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6 py-4 flex items-center justify-between">
+        <a href="/" class="font-semibold">İyilik Görevleri</a>
+        <nav class="hidden sm:flex gap-6 text-sm">
+          <a href="/gorevler.html" class="hover:text-emerald-600">Görevler</a>
+          <a href="/blog.html" class="text-emerald-700">Blog</a>
+          <a href="/bagis-defteri.html" class="hover:text-emerald-600">Bağış Defteri</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="mx-auto max-w-3xl px-4 sm:px-6 py-12">
+      <article class="prose max-w-none">
+        <h1>İlk Yazı: Neden “Görev Yap, İyilik Olsun”?</h1>
+        <p>Platform bağış toplamaz; kullanıcıların tamamladığı görevlerden elde ettiğimiz gelirimizin bir kısmını düzenli olarak bağışlarız.</p>
+        <h2>Nasıl Çalışır?</h2>
+        <ol>
+          <li>Görevi tamamla (video, anket, vb.).</li>
+          <li>Gelir oluşur.</li>
+          <li>Dönem sonunda bağış yapılır ve “Bağış Defteri”ne eklenir.</li>
+        </ol>
+      </article>
+
+      <!-- Reklam alanı (ekleyeceğin zaman aç) -->
+      <!--
+      <ins class="adsbygoogle" style="display:block" data-ad-client="YOUR_CLIENT_ID" data-ad-slot="XXXXXXX" data-ad-format="auto" data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle=window.adsbygoogle||[]).push({});</script>
+      -->
+    </main>
+
+    <footer class="border-t bg-white">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6 py-8 text-sm text-slate-600 flex items-center justify-between">
+        <p>© <span id="y"></span> İyilik Görevleri</p>
+        <a href="/aydinlatma.html" class="hover:text-emerald-700">Aydınlatma</a>
+      </div>
+    </footer>
+    <script>document.getElementById('y').textContent = new Date().getFull
