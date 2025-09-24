@@ -11,24 +11,19 @@
     <meta property="og:description" content="Görev yap, biz kazancımızdan bağış yapalım." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://alanadiniz.com/" />
-
-    <!-- Tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
-
-    <!-- Kendi CSS dosyamız -->
-    <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body class="min-h-screen flex flex-col bg-slate-900 text-white">
-    <header class="border-b bg-slate-800/90 backdrop-blur sticky top-0 z-10">
+  <body class="min-h-screen flex flex-col bg-slate-50 text-slate-900">
+    <header class="border-b bg-white/80 backdrop-blur">
       <div class="mx-auto max-w-6xl px-4 sm:px-6 py-4 flex items-center justify-between">
-        <a href="/" class="flex items-center gap-2 font-semibold text-emerald-400">
+        <a href="/" class="flex items-center gap-2 font-semibold">
           <img src="/favicon.svg" alt="logo" class="h-6 w-6" />
           <span>İyilik Görevleri</span>
         </a>
         <nav class="hidden sm:flex gap-6 text-sm">
-          <a href="/gorevler.html" class="hover:text-emerald-400">Görevler</a>
-          <a href="/blog.html" class="hover:text-emerald-400">Blog</a>
-          <a href="/bagis-defteri.html" class="hover:text-emerald-400">Bağış Defteri</a>
+          <a href="/gorevler.html" class="hover:text-emerald-600">Görevler</a>
+          <a href="/blog.html" class="hover:text-emerald-600">Blog</a>
+          <a href="/bagis-defteri.html" class="hover:text-emerald-600">Bağış Defteri</a>
         </nav>
       </div>
     </header>
@@ -56,37 +51,40 @@
         </div>
       </section>
 
-      <section class="bg-slate-800 border-t">
+      <section class="bg-white border-t">
         <div class="mx-auto max-w-6xl px-4 sm:px-6 py-16 grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div class="p-6 rounded-xl border bg-slate-900 text-white">
+          <div class="p-6 rounded-xl border bg-slate-50">
             <h3 class="font-semibold">Basit Görevler</h3>
-            <p class="mt-2 text-sm">Kısa video, mini anket, paylaşım.</p>
+            <p class="mt-2 text-sm text-slate-600">Kısa video, mini anket, paylaşım.</p>
           </div>
-          <div class="p-6 rounded-xl border bg-slate-900 text-white">
+          <div class="p-6 rounded-xl border bg-slate-50">
             <h3 class="font-semibold">Şeffaf Raporlama</h3>
-            <p class="mt-2 text-sm">Aylık bağış makbuzları herkese açık.</p>
+            <p class="mt-2 text-sm text-slate-600">Aylık bağış makbuzları herkese açık.</p>
           </div>
-          <div class="p-6 rounded-xl border bg-slate-900 text-white">
+          <div class="p-6 rounded-xl border bg-slate-50">
             <h3 class="font-semibold">Oyunlaştırma</h3>
-            <p class="mt-2 text-sm">Puan, rozet, arkadaş daveti.</p>
+            <p class="mt-2 text-sm text-slate-600">Puan, rozet, arkadaş daveti.</p>
           </div>
         </div>
       </section>
+
+      <!-- TheoremReach Türkçe entegrasyon örneği -->
+      <div style="margin-top:32px;">
+        <iframe src="https://theoremreach.com/respondent_entry/direct?api_key=0eec536085438da0e9d62c19701a&user_id=KULLANICI_ID&transaction_id=ISLEM_ID&locale=tr" width="100%" height="600" frameborder="0" style="border-radius:12px;"></iframe>
+      </div>
     </main>
 
-    <footer class="border-t bg-slate-900 text-white">
-      <div class="mx-auto max-w-6xl px-4 sm:px-6 py-8 text-sm flex flex-col sm:flex-row gap-3 sm:items-center sm:justify-between">
+    <footer class="border-t bg-white">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6 py-8 text-sm text-slate-600 flex flex-col sm:flex-row gap-3 sm:items-center sm:justify-between">
         <p>© <span id="y"></span> İyilik Görevleri</p>
         <div class="flex gap-4">
-          <a href="/blog.html" class="hover:text-emerald-400">Blog</a>
-          <a href="/bagis-defteri.html" class="hover:text-emerald-400">Bağış Defteri</a>
-          <a href="/aydinlatma.html" class="hover:text-emerald-400">Aydınlatma</a>
+          <a href="/blog.html" class="hover:text-emerald-700">Blog</a>
+          <a href="/bagis-defteri.html" class="hover:text-emerald-700">Bağış Defteri</a>
+          <a href="/aydinlatma.html" class="hover:text-emerald-700">Aydınlatma</a>
         </div>
       </div>
     </footer>
 
-    <script>
-      document.getElementById('y').textContent = new Date().getFullYear();
-    </script>
+    <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
   </body>
 </html>
